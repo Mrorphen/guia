@@ -23,13 +23,11 @@ botonCalcular.addEventListener("click",function (e){
     if (tierInicial>=tierFinal)
     {
         mensaje = ("Revisa datos");
-        console.log(`tierfinal ${tierFinal} tipo: ${typeof(tierFinal)} tierinicial ${tierInicial} tipo: ${typeof(tierInicial)}`)
 
     } 
     else if (tierInicial==6 && tierFinal==7)
     {
-        mensaje = (`Items: ${itemsPara7}<br/> Cargas: ${cargasPara7}`);
-        console.log(`tierfinal ${tierFinal} tipo: ${typeof(tierFinal)} tierinicial ${tierInicial} tipo: ${typeof(tierInicial)}`)
+        mensaje = (`Items: ${itemsPara7}<br/> Cargas: ${cargasPara7}`);        
     }
     else
     {
@@ -43,13 +41,9 @@ botonCalcular.addEventListener("click",function (e){
         }
         
         mensaje = (`Items: ${items}<br/>Cargas: ${cargas}`);
-        console.log(`tierfinal ${tierFinal} tipo: ${typeof(tierFinal)} tierinicial ${tierInicial} tipo: ${typeof(tierInicial)}`)
+        
     }
     
-    
-
-    console.log(`tierfinal ${tierFinal} tipo: ${typeof(tierFinal)} tierinicial ${tierInicial} tipo: ${typeof(tierInicial)}`)
-
     resultado.innerHTML = mensaje;
 
 },false);
